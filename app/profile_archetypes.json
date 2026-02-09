@@ -1,0 +1,189 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-02-07T21:58:01.361545Z",
+  "archetypes": [
+    {
+      "id": "HIGH_C_LOW_E",
+      "label": {
+        "en": "High Cultural / Low Economic",
+        "el": "Υψηλό Πολιτισμικό / Χαμηλό Οικονομικό"
+      },
+      "when": {
+        "capital_vector": {
+          "C": {
+            "gte": 0.7
+          },
+          "E": {
+            "lte": 0.4
+          }
+        },
+        "risk_components": {}
+      },
+      "signals": {
+        "opportunity": [
+          {
+            "code": "C_ASSET",
+            "en": "Strong creative/cultural assets to leverage.",
+            "el": "Ισχυρά δημιουργικά/πολιτισμικά αποθέματα προς αξιοποίηση."
+          },
+          {
+            "code": "MONETIZATION_GAP",
+            "en": "Monetization gap is likely the main growth lever.",
+            "el": "Το κενό μονοποίησης είναι πιθανό ο κύριος μοχλός ανάπτυξης."
+          }
+        ],
+        "risk": [
+          {
+            "code": "INCOME_VULNERABILITY",
+            "en": "Income vulnerability if market access remains blocked.",
+            "el": "Εισοδηματική ευαλωτότητα αν παραμείνει μπλοκαρισμένη η πρόσβαση στην αγορά."
+          }
+        ],
+        "actions": [
+          {
+            "code": "MARKET_ACCESS",
+            "en": "Market access plan (pricing, channels, partnerships).",
+            "el": "Σχέδιο πρόσβασης στην αγορά (τιμολόγηση, κανάλια, συνεργασίες)."
+          },
+          {
+            "code": "RIGHTS_LICENSING",
+            "en": "Rights/licensing support if applicable.",
+            "el": "Υποστήριξη δικαιωμάτων/αδειοδότησης όπου ισχύει."
+          }
+        ]
+      }
+    },
+    {
+      "id": "HIGH_H_HIGH_BURNOUT",
+      "label": {
+        "en": "High Human Capital / High Burnout Risk",
+        "el": "Υψηλό Ανθρώπινο Κεφάλαιο / Υψηλός Κίνδυνος Burnout"
+      },
+      "when": {
+        "capital_vector": {
+          "H": {
+            "gte": 0.7
+          }
+        },
+        "risk_components": {
+          "R_burnout": {
+            "gte": 0.6
+          }
+        }
+      },
+      "signals": {
+        "opportunity": [
+          {
+            "code": "SKILL_STRENGTH",
+            "en": "Strong skills base—potential for leadership, specialization, or premium positioning.",
+            "el": "Ισχυρή βάση δεξιοτήτων—δυνατότητα ηγεσίας, εξειδίκευσης ή premium τοποθέτησης."
+          }
+        ],
+        "risk": [
+          {
+            "code": "OVERLOAD",
+            "en": "Sustained overload threatens performance and wellbeing.",
+            "el": "Η παρατεταμένη υπερφόρτωση απειλεί απόδοση και ευημερία."
+          }
+        ],
+        "actions": [
+          {
+            "code": "WORKLOAD_REDESIGN",
+            "en": "Workload redesign (scope, boundaries, recovery time).",
+            "el": "Επανασχεδιασμός φόρτου (εύρος, όρια, χρόνος αποκατάστασης)."
+          },
+          {
+            "code": "DELEGATE_AUTOMATE",
+            "en": "Delegate/automate low-value tasks.",
+            "el": "Ανάθεση/αυτοματοποίηση εργασιών χαμηλής αξίας."
+          }
+        ]
+      }
+    },
+    {
+      "id": "LOW_I_HIGH_PRECARITY",
+      "label": {
+        "en": "Low Institutional Access / High Precarity",
+        "el": "Χαμηλή Θεσμική Πρόσβαση / Υψηλή Επισφάλεια"
+      },
+      "when": {
+        "capital_vector": {
+          "I": {
+            "lte": 0.4
+          }
+        },
+        "risk_components": {
+          "R_precarity": {
+            "gte": 0.6
+          }
+        }
+      },
+      "signals": {
+        "opportunity": [
+          {
+            "code": "NAVIGATION_GAIN",
+            "en": "Big wins possible from institutional navigation and support access.",
+            "el": "Μεγάλα κέρδη από θεσμική πλοήγηση και πρόσβαση σε υποστήριξη."
+          }
+        ],
+        "risk": [
+          {
+            "code": "SAFETY_NET_GAP",
+            "en": "Weak safety net increases shock impact.",
+            "el": "Ασθενές δίχτυ ασφαλείας αυξάνει τον αντίκτυπο σοκ."
+          }
+        ],
+        "actions": [
+          {
+            "code": "INSTITUTIONAL_NAV",
+            "en": "Work with an intermediary/ombud to access programs and services.",
+            "el": "Συνεργασία με διαμεσολαβητή/ombud για πρόσβαση σε προγράμματα/υπηρεσίες."
+          },
+          {
+            "code": "DOCUMENTS_CHECKLIST",
+            "en": "Create a documents and eligibility checklist.",
+            "el": "Δημιουργία λίστας δικαιολογητικών και κριτηρίων επιλεξιμότητας."
+          }
+        ]
+      }
+    },
+    {
+      "id": "HIGH_S_HIGH_OPPORTUNITY_FLOW",
+      "label": {
+        "en": "Strong Networks / High Opportunity Flow",
+        "el": "Ισχυρά Δίκτυα / Υψηλή Ροή Ευκαιριών"
+      },
+      "when": {
+        "capital_vector": {
+          "S": {
+            "gte": 0.7
+          }
+        },
+        "risk_components": {}
+      },
+      "signals": {
+        "opportunity": [
+          {
+            "code": "NETWORK_LEVER",
+            "en": "Networks can accelerate opportunities and collaborations.",
+            "el": "Τα δίκτυα μπορούν να επιταχύνουν ευκαιρίες και συνεργασίες."
+          }
+        ],
+        "risk": [
+          {
+            "code": "DEPENDENCY",
+            "en": "Avoid over-dependence on a small cluster of contacts.",
+            "el": "Αποφυγή υπερ-εξάρτησης από μικρό κύκλο επαφών."
+          }
+        ],
+        "actions": [
+          {
+            "code": "BRIDGING_TIES",
+            "en": "Increase bridging ties to new sectors and institutions.",
+            "el": "Ενίσχυση γεφυρωτικών δεσμών προς νέους τομείς και θεσμούς."
+          }
+        ]
+      }
+    }
+  ]
+}

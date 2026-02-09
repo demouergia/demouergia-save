@@ -1,0 +1,1357 @@
+{
+  "schema_version": "SAVER_MODEL_1_2_PDF_IMPORT_2026-02-08",
+  "generated_at": "2026-02-08T12:10:58.444909Z",
+  "languages": [
+    "en",
+    "el"
+  ],
+  "source": {
+    "type": "pdf_import",
+    "file": "Copy of Copy of SAVER MODEL 1_2 - Google Forms.pdf"
+  },
+  "scale_note": "Default scale 0–5 (0 minimum … 5 very good). Some items may be 1–5 in the original form; API normalization clamps to 0–5.",
+  "questions": [
+    {
+      "id": "1",
+      "key": "META_nickname",
+      "text": {
+        "en": "Name (Nickname max 10 characters) — GDPR-safe",
+        "el": "Όνομα (Ψευδώνυμο έως 10 χαρακτήρες) — GDPR-safe"
+      },
+      "type": "text",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 0,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "meta",
+        "target": "nickname"
+      }
+    },
+    {
+      "id": "2",
+      "key": "META_gender",
+      "text": {
+        "en": "Gender",
+        "el": "Φύλο"
+      },
+      "type": "single_choice",
+      "scoring": {
+        "kind": "choice"
+      },
+      "branching": [],
+      "options": [
+        {
+          "en": "Other",
+          "el": "Άλλο"
+        },
+        {
+          "en": "Male",
+          "el": "Άνδρας"
+        },
+        {
+          "en": "Female",
+          "el": "Γυναίκα"
+        }
+      ],
+      "map": {
+        "kind": "meta",
+        "target": "gender"
+      }
+    },
+    {
+      "id": "3",
+      "key": "META_age",
+      "text": {
+        "en": "Age",
+        "el": "Ηλικία"
+      },
+      "type": "single_choice",
+      "scoring": {
+        "kind": "choice"
+      },
+      "branching": [],
+      "options": [
+        {
+          "en": "18-30",
+          "el": "18-30"
+        },
+        {
+          "en": "31-40",
+          "el": "31-40"
+        },
+        {
+          "en": "41-50",
+          "el": "41-50"
+        },
+        {
+          "en": "51-60",
+          "el": "51-60"
+        },
+        {
+          "en": "61-70",
+          "el": "61-70"
+        },
+        {
+          "en": "70+",
+          "el": "Πάνω από 70"
+        }
+      ],
+      "map": {
+        "kind": "meta",
+        "target": "age_band"
+      }
+    },
+    {
+      "id": "4",
+      "key": "META_profession",
+      "text": {
+        "en": "Primary profession/role",
+        "el": "Κύριο επάγγελμα/ρόλος"
+      },
+      "type": "text",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 0,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "meta",
+        "target": "profession"
+      }
+    },
+    {
+      "id": "5",
+      "key": "META_sector",
+      "text": {
+        "en": "Primary sector",
+        "el": "Κύριος τομέας δραστηριότητας"
+      },
+      "type": "single_choice",
+      "scoring": {
+        "kind": "choice"
+      },
+      "branching": [],
+      "options": [
+        {
+          "en": "CCS (Cultural & Creative)",
+          "el": "CCS (Πολιτισμικός/Δημιουργικός)"
+        },
+        {
+          "en": "SME/Business; Public",
+          "el": "Επιχείρηση/Δημόσιο"
+        },
+        {
+          "en": "NGO; Education; Health",
+          "el": "ΜΚΟ/Εκπαίδευση/Υγεία"
+        },
+        {
+          "en": "Social care; Other",
+          "el": "Κοινωνική φροντίδα/Άλλο"
+        }
+      ],
+      "map": {
+        "kind": "meta",
+        "target": "sector"
+      }
+    },
+    {
+      "id": "6",
+      "key": "META_employment",
+      "text": {
+        "en": "Employment status",
+        "el": "Καθεστώς απασχόλησης"
+      },
+      "type": "single_choice",
+      "scoring": {
+        "kind": "choice"
+      },
+      "branching": [],
+      "options": [
+        {
+          "en": "Self-employed",
+          "el": "Αυτοαπασχολούμενος/η"
+        },
+        {
+          "en": "Freelance/Employee",
+          "el": "Ελεύθερος επαγγελματίας/Μισθωτός/η"
+        },
+        {
+          "en": "Unemployed/Non-active",
+          "el": "Άνεργος/η - Χωρίς δραστηριότητα"
+        },
+        {
+          "en": "Student/Apprentice",
+          "el": "Φοιτητής/α - Μαθητεία"
+        },
+        {
+          "en": "Other",
+          "el": "Άλλο"
+        }
+      ],
+      "map": {
+        "kind": "meta",
+        "target": "employment"
+      }
+    },
+    {
+      "id": "7",
+      "key": "META_region",
+      "text": {
+        "en": "Region (GDPR-safe)",
+        "el": "Περιφέρεια (GDPR-safe)"
+      },
+      "type": "text",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 0,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "meta",
+        "target": "region"
+      }
+    },
+    {
+      "id": "8",
+      "key": "META_years_experience",
+      "text": {
+        "en": "Years of experience",
+        "el": "Χρόνια εμπειρίας"
+      },
+      "type": "single_choice",
+      "scoring": {
+        "kind": "choice"
+      },
+      "branching": [],
+      "options": [
+        {
+          "en": "1-5",
+          "el": "1-5"
+        },
+        {
+          "en": "6-10",
+          "el": "6-10"
+        },
+        {
+          "en": "More",
+          "el": "Περισσότερα"
+        }
+      ],
+      "map": {
+        "kind": "meta",
+        "target": "years_experience"
+      }
+    },
+    {
+      "id": "9",
+      "key": "META_risk_exclusion",
+      "text": {
+        "en": "Higher risk of labour-market exclusion?",
+        "el": "Αυξημένος κίνδυνος αποκλεισμού από την αγορά εργασίας;"
+      },
+      "type": "single_choice",
+      "scoring": {
+        "kind": "choice"
+      },
+      "branching": [],
+      "options": [
+        {
+          "en": "Yes",
+          "el": "Ναι"
+        },
+        {
+          "en": "No",
+          "el": "Όχι"
+        }
+      ],
+      "map": {
+        "kind": "meta",
+        "target": "risk_exclusion_flag"
+      }
+    },
+    {
+      "id": "10",
+      "key": "S_stock_help_quick",
+      "text": {
+        "en": "I have 0–5 people I can ask for professional help quickly.",
+        "el": "Έχω 0–5 άτομα για άμεση επαγγελματική βοήθεια."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "S"
+      }
+    },
+    {
+      "id": "11",
+      "key": "S_stock_communities",
+      "text": {
+        "en": "I participate in professional communities (online/offline).",
+        "el": "Συμμετέχω σε επαγγελματικές κοινότητες (online/offline)."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "S"
+      }
+    },
+    {
+      "id": "12",
+      "key": "S_stock_collab_freq",
+      "text": {
+        "en": "Frequency of collaboration in the last 6 months.",
+        "el": "Συχνότητα συνεργασιών τελευταίων 6 μηνών."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "S"
+      }
+    },
+    {
+      "id": "13",
+      "key": "S_stock_bridging",
+      "text": {
+        "en": "I can access bridging contacts outside my immediate circle.",
+        "el": "Έχω επαφές εκτός στενού κύκλου (γέφυρες)."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "S"
+      }
+    },
+    {
+      "id": "14",
+      "key": "S_stock_trust",
+      "text": {
+        "en": "Trust level in key professional relationships.",
+        "el": "Εμπιστοσύνη στις βασικές επαγγελματικές σχέσεις."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "S"
+      }
+    },
+    {
+      "id": "15",
+      "key": "S_stock_info_opps",
+      "text": {
+        "en": "My network brings information/opportunities.",
+        "el": "Το δίκτυό μου φέρνει πληροφορίες/ευκαιρίες."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "S"
+      }
+    },
+    {
+      "id": "16",
+      "key": "S_stock_crisis_support",
+      "text": {
+        "en": "I can mobilize support in crisis.",
+        "el": "Μπορώ να κινητοποιώ υποστήριξη σε κρίση."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "S"
+      }
+    },
+    {
+      "id": "17",
+      "key": "S_stock_mentors",
+      "text": {
+        "en": "I have mentors/advisors.",
+        "el": "Έχω μέντορες/συμβούλους."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "S"
+      }
+    },
+    {
+      "id": "18",
+      "key": "S_stock_gatekeepers",
+      "text": {
+        "en": "My network includes institutional gatekeepers.",
+        "el": "Το δίκτυό μου περιλαμβάνει θεσμικούς gatekeepers."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "S"
+      }
+    },
+    {
+      "id": "19",
+      "key": "S_stock_weak_ties",
+      "text": {
+        "en": "I maintain weak ties via events/platforms.",
+        "el": "Διατηρώ ‘ασθενείς δεσμούς’ μέσω εκδηλώσεων/πλατφορμών."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "S"
+      }
+    },
+    {
+      "id": "20",
+      "key": "H_stock_market_fit",
+      "text": {
+        "en": "My core skills match market needs.",
+        "el": "Οι δεξιότητές μου ταιριάζουν στις ανάγκες της αγοράς."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "H"
+      }
+    },
+    {
+      "id": "21",
+      "key": "H_stock_learning",
+      "text": {
+        "en": "I learn new tools/methods effectively.",
+        "el": "Μαθαίνω αποτελεσματικά νέα εργαλεία/μεθόδους."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "H"
+      }
+    },
+    {
+      "id": "22",
+      "key": "H_stock_certifications",
+      "text": {
+        "en": "I have relevant certifications/training.",
+        "el": "Έχω σχετικές πιστοποιήσεις/εκπαίδευση."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "H"
+      }
+    },
+    {
+      "id": "23",
+      "key": "H_stock_time_delivery",
+      "text": {
+        "en": "I manage time and deliver reliably.",
+        "el": "Διαχειρίζομαι τον χρόνο και παραδίδω αξιόπιστα."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "H"
+      }
+    },
+    {
+      "id": "24",
+      "key": "H_stock_value_prop",
+      "text": {
+        "en": "I communicate my value proposition clearly.",
+        "el": "Επικοινωνώ καθαρά την αξία μου."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "H"
+      }
+    },
+    {
+      "id": "25",
+      "key": "H_stock_negotiate",
+      "text": {
+        "en": "I can negotiate contracts/terms.",
+        "el": "Μπορώ να διαπραγματεύομαι όρους/συμβόλαια."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "H"
+      }
+    },
+    {
+      "id": "26",
+      "key": "H_stock_digital",
+      "text": {
+        "en": "I have strong digital skills for my work.",
+        "el": "Έχω ισχυρές ψηφιακές δεξιότητες για τη δουλειά μου."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "H"
+      }
+    },
+    {
+      "id": "27",
+      "key": "H_stock_team_conflict",
+      "text": {
+        "en": "I work in teams and manage conflict constructively.",
+        "el": "Δουλεύω σε ομάδες και διαχειρίζομαι συγκρούσεις."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "H"
+      }
+    },
+    {
+      "id": "28",
+      "key": "H_stock_documentation",
+      "text": {
+        "en": "I document my work/processes.",
+        "el": "Τεκμηριώνω τη δουλειά/διαδικασίες."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "H"
+      }
+    },
+    {
+      "id": "29",
+      "key": "H_stock_underutilized",
+      "text": {
+        "en": "My skills feel underutilized.",
+        "el": "Οι δεξιότητές μου υπο-αξιοποιούνται."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": true
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "H"
+      }
+    },
+    {
+      "id": "30",
+      "key": "C_stock_identity",
+      "text": {
+        "en": "I have a coherent professional identity/portfolio.",
+        "el": "Έχω συνεκτική επαγγελματική ταυτότητα/portfolio."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "C"
+      }
+    },
+    {
+      "id": "31",
+      "key": "C_stock_recognition",
+      "text": {
+        "en": "My work is recognized by peers/clients.",
+        "el": "Η δουλειά μου αναγνωρίζεται από peers/πελάτες."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "C"
+      }
+    },
+    {
+      "id": "32",
+      "key": "C_stock_storytelling",
+      "text": {
+        "en": "I can translate my work into narratives for audiences.",
+        "el": "Μεταφράζω τη δουλειά μου σε αφήγηση για τα κοινά."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "C"
+      }
+    },
+    {
+      "id": "33",
+      "key": "C_stock_spaces_access",
+      "text": {
+        "en": "I access cultural/creative spaces or platforms.",
+        "el": "Έχω πρόσβαση σε δημιουργικούς χώρους/πλατφόρμες."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "C"
+      }
+    },
+    {
+      "id": "34",
+      "key": "C_stock_crossdiscipline",
+      "text": {
+        "en": "I collaborate across disciplines to create new value.",
+        "el": "Συνεργάζομαι διεπιστημονικά για νέα αξία."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "C"
+      }
+    },
+    {
+      "id": "35",
+      "key": "C_stock_monetize",
+      "text": {
+        "en": "I monetize my creative output effectively.",
+        "el": "Μονοποιώ/εμπορευματοποιώ αποτελεσματικά το έργο."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "C"
+      }
+    },
+    {
+      "id": "36",
+      "key": "C_stock_rights",
+      "text": {
+        "en": "I manage rights/licensing (if relevant).",
+        "el": "Διαχειρίζομαι δικαιώματα/αδειοδότηση (αν ισχύει)."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "C"
+      }
+    },
+    {
+      "id": "37",
+      "key": "C_stock_visibility",
+      "text": {
+        "en": "I have visibility channels (media/social/exhibitions).",
+        "el": "Έχω κανάλια προβολής (media/social/εκθέσεις)."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "C"
+      }
+    },
+    {
+      "id": "38",
+      "key": "C_stock_adapt",
+      "text": {
+        "en": "I adapt my output to new contexts/markets.",
+        "el": "Προσαρμόζω το έργο σε νέα πλαίσια/αγορές."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "C"
+      }
+    },
+    {
+      "id": "39",
+      "key": "B_CE_gatekeeping",
+      "text": {
+        "en": "I experience cultural gatekeeping/exclusion in markets.",
+        "el": "Βιώνω gatekeeping/πολιτισμικό αποκλεισμό στην αγορά."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "barrier"
+      }
+    },
+    {
+      "id": "40",
+      "key": "E_stock_income_stability",
+      "text": {
+        "en": "Income stability over last 12 months.",
+        "el": "Έχω σταθερότητα εισοδήματος 12 μηνών."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "E"
+      }
+    },
+    {
+      "id": "41",
+      "key": "E_stock_buffer_3m",
+      "text": {
+        "en": "I have a 3‑month financial buffer.",
+        "el": "Έχω οικονομικό ‘μαξιλάρι’ 3 μηνών."
+      },
+      "type": "single_choice",
+      "scoring": {
+        "kind": "choice"
+      },
+      "branching": [],
+      "options": [
+        {
+          "en": "Yes / ΝΑΙ",
+          "el": "Ναι"
+        },
+        {
+          "en": "No / Όχι",
+          "el": "Όχι"
+        }
+      ],
+      "map": {
+        "kind": "stock",
+        "cap": "E"
+      }
+    },
+    {
+      "id": "42",
+      "key": "E_stock_invest_networking",
+      "text": {
+        "en": "I can invest resources in networking/visibility.",
+        "el": "Μπορώ να επενδύσω σε δικτύωση/προβολή."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "E"
+      }
+    },
+    {
+      "id": "43",
+      "key": "E_stock_invest_training",
+      "text": {
+        "en": "I can invest in training/experience.",
+        "el": "Μπορώ να επενδύσω σε εκπαίδευση/εμπειρία."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "E"
+      }
+    },
+    {
+      "id": "44",
+      "key": "E_stock_fair_pricing",
+      "text": {
+        "en": "I can set fair prices/rates for my products or services.",
+        "el": "Μπορώ να ορίζω δίκαιες τιμές/αμοιβές για την παραγωγή μου και τη δουλειά μου."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "E"
+      }
+    },
+    {
+      "id": "45",
+      "key": "E_stock_project_continuity",
+      "text": {
+        "en": "I have continuity of projects/contracts.",
+        "el": "Έχω συνέχεια έργων/συμβολαίων."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "E"
+      }
+    },
+    {
+      "id": "46",
+      "key": "E_stock_debt_limits",
+      "text": {
+        "en": "Debt/obligations limit my choices.",
+        "el": "Χρέη/υποχρεώσεις περιορίζουν επιλογές."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": true
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "E"
+      }
+    },
+    {
+      "id": "47",
+      "key": "E_to_I_tax_admin_capacity",
+      "text": {
+        "en": "I can manage tax/admin requirements.",
+        "el": "Μπορώ να διαχειρίζομαι φορολογικά/διοικητικά."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "transfer"
+      }
+    },
+    {
+      "id": "48",
+      "key": "I_stock_programs_knowledge",
+      "text": {
+        "en": "I know relevant support programmes.",
+        "el": "Γνωρίζω σχετικά προγράμματα υποστήριξης."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "I"
+      }
+    },
+    {
+      "id": "49",
+      "key": "I_stock_access_services",
+      "text": {
+        "en": "I can access institutional services without major barriers.",
+        "el": "Μπορώ να έχω πρόσβαση σε υπηρεσίες χωρίς μεγάλα εμπόδια."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "I"
+      }
+    },
+    {
+      "id": "50",
+      "key": "I_to_E_funding",
+      "text": {
+        "en": "Access to grants/funding when eligible.",
+        "el": "Πρόσβαση σε επιχορηγήσεις/χρηματοδότηση όταν δικαιούμαι."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "transfer"
+      }
+    },
+    {
+      "id": "51",
+      "key": "I_stock_institutional_networks",
+      "text": {
+        "en": "Participation in institutional networks (hubs, unions).",
+        "el": "Συμμετοχή σε θεσμικά δίκτυα (hubs, σωματεία)."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "I"
+      }
+    },
+    {
+      "id": "52",
+      "key": "I_stock_fair_treatment_trust",
+      "text": {
+        "en": "Trust in institutions to treat me fairly.",
+        "el": "Εμπιστοσύνη στους θεσμούς για δίκαιη μεταχείριση."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "I"
+      }
+    },
+    {
+      "id": "53",
+      "key": "I_stock_recognition_credibility",
+      "text": {
+        "en": "Institutional recognition increases credibility.",
+        "el": "Η θεσμική αναγνώριση αυξάνει αξιοπιστία."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "I"
+      }
+    },
+    {
+      "id": "54",
+      "key": "I_stock_intermediaries_access",
+      "text": {
+        "en": "Access to intermediaries (incubators, advisors, ombuds).",
+        "el": "Πρόσβαση σε διαμεσολαβητές (incubators, σύμβουλοι, ombuds)."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "I"
+      }
+    },
+    {
+      "id": "55",
+      "key": "I_stock_digital_public_services",
+      "text": {
+        "en": "I can use digital public services effectively.",
+        "el": "Χρησιμοποιώ αποτελεσματικά ψηφιακές δημόσιες υπηρεσίες."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "stock",
+        "cap": "I"
+      }
+    },
+    {
+      "id": "56",
+      "key": "B_institutional_complexity",
+      "text": {
+        "en": "Institutional procedures are too complex.",
+        "el": "Οι θεσμικές διαδικασίες είναι υπερβολικά πολύπλοκες."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "barrier"
+      }
+    },
+    {
+      "id": "57",
+      "key": "B_discrimination_exclusion",
+      "text": {
+        "en": "Experienced discrimination/exclusion affecting work.",
+        "el": "Έχω βιώσει διάκριση/αποκλεισμό που επηρεάζει τη δουλειά."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "barrier"
+      }
+    },
+    {
+      "id": "58",
+      "key": "B_market_gatekeeping",
+      "text": {
+        "en": "Unfair intermediaries limit market access.",
+        "el": "Άδικοι μεσάζοντες περιορίζουν πρόσβαση στην αγορά."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "barrier"
+      }
+    },
+    {
+      "id": "59",
+      "key": "B_digital_divide",
+      "text": {
+        "en": "Digital barriers limit participation.",
+        "el": "Ψηφιακά εμπόδια περιορίζουν συμμετοχή."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "barrier"
+      }
+    },
+    {
+      "id": "60",
+      "key": "R_precarity",
+      "text": {
+        "en": "Perceived professional precarity.",
+        "el": "Αντιλαμβανόμενη επαγγελματική επισφάλεια."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "risk"
+      }
+    },
+    {
+      "id": "61",
+      "key": "R_burnout",
+      "text": {
+        "en": "Risk of burnout (fatigue/overload).",
+        "el": "Κίνδυνος εξουθένωσης (κόπωση/υπερφόρτωση)."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "risk"
+      }
+    },
+    {
+      "id": "62",
+      "key": "R_support_access",
+      "text": {
+        "en": "Access to psychosocial support if needed.",
+        "el": "Πρόσβαση σε ψυχοκοινωνική υποστήριξη αν χρειαστεί."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": true
+      },
+      "branching": [],
+      "map": {
+        "kind": "risk"
+      }
+    },
+    {
+      "id": "63",
+      "key": "R_shock_exposure",
+      "text": {
+        "en": "Exposure to shocks (income loss/cancellations).",
+        "el": "Έκθεση σε σοκ (απώλεια εισοδήματος/ακυρώσεις)."
+      },
+      "type": "scale",
+      "scoring": {
+        "kind": "likert",
+        "min": 0,
+        "max": 5,
+        "reverse": false
+      },
+      "branching": [],
+      "map": {
+        "kind": "risk"
+      }
+    }
+  ]
+}

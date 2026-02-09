@@ -1,0 +1,18 @@
+{
+  "consent_research": true,
+  "meta_public": {
+    "sector": "CCS",
+    "employment": "Self-employed/Freelance",
+    "years_experience": "6–10"
+  },
+  "responses": {
+    "S_stock_support": 4,
+    "S_stock_community": 3,
+    "H_stock_learning": 4,
+    "C_stock_identity": 5,
+    "C_to_E_monetize": 2,
+    "B_market_gatekeeping": 4,
+    "R_precarity": 4,
+    "R_burnout": 3
+  }
+}
