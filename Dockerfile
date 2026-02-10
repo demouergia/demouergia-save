@@ -8,4 +8,4 @@ COPY questionnaire_schema.json ./questionnaire_schema.json
 COPY .env.example ./.env.example
 COPY README.md ./README.md
 EXPOSE 8000
-CMD ["uvicorn","app.main:app","--host","0.0.0.0","--port","8000"]
+CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT}"]
